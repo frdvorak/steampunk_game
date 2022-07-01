@@ -136,7 +136,7 @@ window.addEventListener('load', function(){
             this.x -= this.speedX + this.game.speed;
             this.y += this.speedY;
             if (this.y > this.game.height + this.size || this.x < 0 - this.size) this.markedForDeletion = true;
-            if (this.y > this.game.height - this.bottomBounceBoundary && this.bounced < 5){
+            if (this.y > this.game.height - this.bottomBounceBoundary && this.bounced < 1){
                 this.bounced++;
                 this.speedY *= -0.7;
             }
