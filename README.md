@@ -4,6 +4,8 @@ Build a complete game from scratch with HTML, CSS & JavaScript, tutorial coming 
 
 ## Live demo: https://frdvorak.github.io/steampunk_game/
 
+<img src='https://www.frankslaboratory.co.uk/downloads/103/steampunk_game_banner.png' alt='steampunk game banner'>
+
 Press 'd' for debug mode, to see enemy hitboxes and lives, F5 to restart game.
 Enter power up mode by colliding with small power up fish (glowing) or by shooting fast Moonfish (2 light bulbs on stalks) from distance
 Reach score over 80 in 30 seconds to win the game!
