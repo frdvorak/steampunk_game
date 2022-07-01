@@ -3,6 +3,7 @@ Steampunk Game
 Build a complete game from scratch with HTML, CSS & JavaScript, tutorial coming soon.
 
 ## Live demo: https://frdvorak.github.io/steampunk_game/
+Controls: up and down arrow to move, spacebar to shoot
 
 <img src='https://www.frankslaboratory.co.uk/downloads/103/steampunk_game_banner.png' alt='steampunk game banner'>
 
