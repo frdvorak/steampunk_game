@@ -19,3 +19,11 @@
 #layer1, #layer2, #layer3, #layer4, #player, #angler1, #angler2, #lucky, #projectile, #gears, #hivewhale, #drone, #smokeExplosion, #fireExplosion, #bulbwhale, #moonfish, #shield {
     display: none;
 }
+
+.info {
+    padding: 10px;
+    position: relative;
+    z-index: 100;
+    text-shadow: 1px 1px 0 white;
+    pointer-events: none;
+}
