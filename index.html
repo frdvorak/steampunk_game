@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+
+    <!-- characters -->
+    <img id="player" src="assets/player.png">
+    <img id="angler1" src="assets/angler1.png">
+    <img id="angler2" src="assets/angler2.png">
+    <img id="lucky" src="assets/lucky.png">
+    <img id="hivewhale" src="assets/hivewhale.png">
+    <img id="drone" src="assets/drone.png">
+    <img id="bulbwhale" src="assets/bulbwhale.png">
+    <img id="moonfish" src="assets/moonfish.png">
+
+    <!-- props -->
+    <img id="projectile" src="assets/projectile.png">
+    <img id="gears" src="assets/gears.png">
+    <img id="smokeExplosion" src="assets/smokeExplosion.png">
+    <img id="fireExplosion" src="assets/fireExplosion.png">
+    <img id="shield" src="assets/shield.png">
+
+    <!-- environment -->
+    <img id="layer1" src="assets/layer1.png">
+    <img id="layer2" src="assets/layer2.png">
+    <img id="layer3" src="assets/layer3.png">
+    <img id="layer4" src="assets/layer4.png">
+
+    <!-- sounds -->
+    <audio id="powerup" src="assets/powerup.wav"></audio>
+    <audio id="powerdown" src="assets/powerdown.wav"></audio>
+    <audio id="explosion" src="assets/explosion.wav"></audio>
+    <audio id="shot" src="assets/shot.wav"></audio>
+    <audio id="hit" src="assets/hit.wav"></audio>
+    <audio id="shieldSound" src="assets/shield.wav"></audio>
+
+    <script src="script.js"></script>
+
+    <p>Press 'd' for debug mode, to see enemy hitboxes and lives, F5 to restart game.</p>
+    <p>Enter power up mode by colliding with small power up fish (glowing) or by shooting fast Moonfish (2 light bulbs on stalks) from distance</p>
+    <p>Reach score over 80 in 30 seconds to win the game!</p>
+    <p>Let me know what performance you get on older computers, any lag? This game is not optimised for mobile phones.</p>
+</body>
+</html>
