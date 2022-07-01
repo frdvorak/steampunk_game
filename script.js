@@ -530,7 +530,7 @@ window.addEventListener('load', function(){
                     this.addExplosion(enemy);
                     this.sound.hit();
                     this.shield.reset();
-                    for (let i = 0; i < enemy.score; i++){
+                    for (let i = 0; i < 2; i++){
                         this.particles.push(new Particle(this, enemy.x + enemy.width * 0.5, enemy.y + enemy.height * 0.5));
                     }
                     if (enemy.type === 'lucky') this.player.enterPowerUp();
@@ -542,7 +542,7 @@ window.addEventListener('load', function(){
                         projectile.markedForDeletion = true;
                         this.particles.push(new Particle(this, enemy.x + enemy.width * 0.5, enemy.y + enemy.height * 0.5));
                         if (enemy.lives <= 0){
-                            for (let i = 0; i < enemy.score; i++){
+                            for (let i = 0; i < 3; i++){
                                 this.particles.push(new Particle(this, enemy.x + enemy.width * 0.5, enemy.y + enemy.height * 0.5));
                             }
                             enemy.markedForDeletion = true;
