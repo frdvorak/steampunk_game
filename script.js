@@ -155,7 +155,7 @@ window.addEventListener('load', function(){
             this.width = 120;
             this.height = 190;
             this.x = 20;
-            this.y = 100;
+            this.y = 130;
             this.frameX = 0;
             this.frameY = 0;
             this.maxFrame = 37;
@@ -291,60 +291,17 @@ window.addEventListener('load', function(){
             this.type = 'lucky';
         }
     }
-    class HiveWhale extends Enemy {
-        constructor(game){
-            super(game);
-            this.width = 400;
-            this.height = 227;
-            this.y = Math.random() * (this.game.height * 0.95 - this.height);
-            this.image = document.getElementById('hivewhale');
-            this.frameY = 0;
-            this.lives = 20;
-            this.score = this.lives;
-            this.type = 'hive';
-            this.speedX = Math.random() * -1.2 - 0.2;
-        }
-    }
     class Drone extends Enemy {
         constructor(game, x, y){
             super(game);
             this.width = 115;
             this.height = 95;
-            this.x = x;
-            this.y = y;
+            this.y = Math.random() * (this.game.height * 0.95 - this.height);
             this.image = document.getElementById('drone');
             this.frameY = Math.floor(Math.random() * 2);
             this.lives = 3;
             this.score = this.lives;
-            this.type = 'drone';
             this.speedX = Math.random() * -4.2 - 0.5;
-        }
-    }
-    class BulbWhale extends Enemy {
-        constructor(game){
-            super(game);
-            this.width = 270;
-            this.height = 219;
-            this.y = Math.random() * (this.game.height * 0.95 - this.height);
-            this.image = document.getElementById('bulbwhale');
-            this.frameY = Math.floor(Math.random() * 2);
-            this.lives = 20;
-            this.score = this.lives;
-            this.speedX = Math.random() * -1.2 - 0.2;
-        }
-    }
-    class MoonFish extends Enemy {
-        constructor(game){
-            super(game);
-            this.width = 227;
-            this.height = 240;
-            this.y = Math.random() * (this.game.height * 0.95 - this.height);
-            this.image = document.getElementById('moonfish');
-            this.frameY = 0;
-            this.lives = 10;
-            this.score = this.lives;
-            this.speedX = Math.random() * -1.2 - 2;
-            this.type = 'moon';
         }
     }
     
@@ -582,9 +539,7 @@ window.addEventListener('load', function(){
             const randomize = Math.random();
             if (randomize < 0.3) this.enemies.push(new Angler1(this));
             else if (randomize < 0.6) this.enemies.push(new Angler2(this));
-            else if (randomize < 0.7) this.enemies.push(new HiveWhale(this));
-            else if (randomize < 0.8) this.enemies.push(new BulbWhale(this));
-            else if (randomize < 0.9) this.enemies.push(new MoonFish(this));
+            else if (randomize < 0.9) this.enemies.push(new Drone(this));
             else this.enemies.push(new LuckyFish(this));
         }
         addExplosion(enemy){
